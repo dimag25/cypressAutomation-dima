@@ -1,0 +1,10 @@
+{
+  "projectId": "kokiqe",
+  "baseUrl": "https://services.smartbear.com//samples/TestComplete15/smartstore",
+  "ignoreTestFiles": "**/examples/*",
+  "viewportHeight": 768,
+  "viewportWidth": 1580,
+  "env": {
+    "allureResultsPath": "allure-results"
+  }
+}

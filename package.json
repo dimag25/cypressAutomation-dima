@@ -1,0 +1,21 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.spec.js",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.19.5",
+    "cypress": "^7.2.0",
+    "allure-commandline": "^2.13.8"
+  },
+  "scripts": {
+    "cy:run":"cypress run --env allure=true",
+    "test": "npm run cy:run",
+    "allure:report" : "allure serve",
+    "test:report": "npm run test &  allure serve",
+    "dashboardRun":"npx cypress run --record --key cc96a40f-0be9-4136-bf6c-bf0208d1066d --parallel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
