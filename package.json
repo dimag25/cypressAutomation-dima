@@ -9,10 +9,10 @@
     "allure-commandline": "^2.13.8"
   },
   "scripts": {
-    "cy:run":"npx cypress run",
+    "cy:run":"cypress run",
     "test": "npm run cy:run",
-    "allure:report" : "allure serve",
-    "test:report": "npm run test &  allure serve",
+    "allure:report" : "allure generate allure-results  --clean allure-report && allure open allure-report",
+    "test:allure": "npm run cy:run &  npm run allure:report",
     "dashboardRun":"npx cypress run --record --key cc96a40f-0be9-4136-bf6c-bf0208d1066d --parallel"
   },
   "keywords": [],
