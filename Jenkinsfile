@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Download git project') {
             steps {
-                git 'https://github.com/dimag25/cypressAutomation.git'
+                git 'https://github.com/dimag25/cypressAutomation-dima.git'
             }
         }
         
