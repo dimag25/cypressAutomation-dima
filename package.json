@@ -9,7 +9,7 @@
     "allure-commandline": "^2.13.8"
   },
   "scripts": {
-    "cy:run":"cypress run --env allure=true",
+    "cy:run":"npx cypress run --env allure=true",
     "test": "npm run cy:run",
     "allure:report" : "allure serve",
     "test:report": "npm run test &  allure serve",
